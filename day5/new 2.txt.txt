@@ -1,0 +1,203 @@
+PS Z:\2.2\IT2234\myapp> node .\app.js
+PS Z:\2.2\IT2234\myapp> 
+PS Z:\2.2\IT2234\myapp> node .\app.js
+Z:\2.2\IT2234\myapp\app.js:1
+const express = requere('express');
+                ^
+
+ReferenceError: requere is not defined
+    at Object.<anonymous> (Z:\2.2\IT2234\myapp\app.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+
+Node.js v18.16.0
+PS Z:\2.2\IT2234\myapp> node .\app.js
+Server is running on3001
+ReferenceError: send is not defined
+    at Z:\2.2\IT2234\myapp\app.js:7:5
+    at Layer.handle [as handle_request] (Z:\2.2\IT2234\myapp\node_modules\express\lib\router\layer.js:95:5)
+    at next (Z:\2.2\IT2234\myapp\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (Z:\2.2\IT2234\myapp\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (Z:\2.2\IT2234\myapp\node_modules\express\lib\router\layer.js:95:5)
+    at Z:\2.2\IT2234\myapp\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (Z:\2.2\IT2234\myapp\node_modules\express\lib\router\index.js:346:12)
+    at next (Z:\2.2\IT2234\myapp\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (Z:\2.2\IT2234\myapp\node_modules\express\lib\middleware\init.js:40:5)
+    at Layer.handle [as handle_request] (Z:\2.2\IT2234\myapp\node_modules\express\lib\router\layer.js:95:5)
+PS Z:\2.2\IT2234\myapp> node .\app.js
+Server is running on3001
+PS Z:\2.2\IT2234\myapp> 
+PS Z:\2.2\IT2234\myapp> node .\app.js
+Server is running on3001
+PS Z:\2.2\IT2234\myapp> node .\app.js
+Server is running on3001
+PS Z:\2.2\IT2234\myapp> 
+ *  History restored 
+
+PS Z:\2.2\IT2234\myapp> ^C
+PS Z:\2.2\IT2234\myapp> ^C
+PS Z:\2.2\IT2234\myapp> ^C
+PS Z:\2.2\IT2234\myapp> node .\app.js
+PS Z:\2.2\IT2234\myapp> ^C
+PS Z:\2.2\IT2234\myapp> node .\app.js
+PS Z:\2.2\IT2234\myapp> node .\app.js
+Server is running on3001
+PS Z:\2.2\IT2234\myapp> node .\app.js
+Z:\2.2\IT2234\myapp\app.js:12
+];
+^
+
+SyntaxError: Unexpected token ']'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+
+Node.js v18.16.0
+PS Z:\2.2\IT2234\myapp> node .\app.js
+Server is running on3001
+PS Z:\2.2\IT2234\myapp> node .\app.js
+Server is running on3001
+PS Z:\2.2\IT2234\myapp> node .\app.js
+Server is running on3001
+PS Z:\2.2\IT2234\myapp> node .\app.js      
+Server is running on3001
+PS Z:\2.2\IT2234\myapp> node .\app.js
+Server is running on3001
+PS Z:\2.2\IT2234\myapp> node .\app.js
+Server is running on3001
+2021ict15
+PS Z:\2.2\IT2234\myapp> node .\app.js
+Server is running on3001
+PS Z:\2.2\IT2234\myapp> node .\app.js
+Server is running on3001
+PS Z:\2.2\IT2234\myapp> npm install nodemon
+
+added 29 packages, and audited 99 packages in 4s
+
+18 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS Z:\2.2\IT2234\myapp> npm start
+
+> myapp@1.0.0 start
+> node app.js
+
+Server is running on3001
+Terminate batch job (Y/N)? y
+PS Z:\2.2\IT2234\myapp> npm start
+
+> myapp@1.0.0 start
+> nodemon app.js
+
+[nodemon] 3.1.9
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node app.js`
+Server is running on3001
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on3001
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on3001
+ReferenceError: gender is not defined
+    at Z:\2.2\IT2234\myapp\app.js:28:59
+    at Array.find (<anonymous>)
+    at Z:\2.2\IT2234\myapp\app.js:28:27
+    at Layer.handle [as handle_request] (Z:\2.2\IT2234\myapp\node_modules\express\lib\router\layer.js:95:5)
+    at next (Z:\2.2\IT2234\myapp\node_modules\express\lib\router\route.js:149:13)     
+    at Route.dispatch (Z:\2.2\IT2234\myapp\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (Z:\2.2\IT2234\myapp\node_modules\express\lib\router\layer.js:95:5)
+    at Z:\2.2\IT2234\myapp\node_modules\express\lib\router\index.js:284:15
+    at param (Z:\2.2\IT2234\myapp\node_modules\express\lib\router\index.js:365:14)    
+    at param (Z:\2.2\IT2234\myapp\node_modules\express\lib\router\index.js:376:14)    
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on3001
+ReferenceError: gender is not defined
+    at Z:\2.2\IT2234\myapp\app.js:28:61
+    at Array.filter (<anonymous>)
+    at Z:\2.2\IT2234\myapp\app.js:28:27
+    at Layer.handle [as handle_request] (Z:\2.2\IT2234\myapp\node_modules\express\lib\router\layer.js:95:5)
+    at next (Z:\2.2\IT2234\myapp\node_modules\express\lib\router\route.js:149:13)     
+    at Route.dispatch (Z:\2.2\IT2234\myapp\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (Z:\2.2\IT2234\myapp\node_modules\express\lib\router\layer.js:95:5)
+    at Z:\2.2\IT2234\myapp\node_modules\express\lib\router\index.js:284:15
+    at param (Z:\2.2\IT2234\myapp\node_modules\express\lib\router\index.js:365:14)    
+    at param (Z:\2.2\IT2234\myapp\node_modules\express\lib\router\index.js:376:14)    
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on3001
+ReferenceError: gender is not defined
+    at Z:\2.2\IT2234\myapp\app.js:28:61
+    at Array.filter (<anonymous>)
+    at Z:\2.2\IT2234\myapp\app.js:28:27
+    at Layer.handle [as handle_request] (Z:\2.2\IT2234\myapp\node_modules\express\lib\router\layer.js:95:5)
+    at next (Z:\2.2\IT2234\myapp\node_modules\express\lib\router\route.js:149:13)     
+    at Route.dispatch (Z:\2.2\IT2234\myapp\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (Z:\2.2\IT2234\myapp\node_modules\express\lib\router\layer.js:95:5)
+    at Z:\2.2\IT2234\myapp\node_modules\express\lib\router\index.js:284:15
+    at param (Z:\2.2\IT2234\myapp\node_modules\express\lib\router\index.js:365:14)    
+    at param (Z:\2.2\IT2234\myapp\node_modules\express\lib\router\index.js:376:14)    
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on3001
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on3001
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on3001
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on3001
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on3001
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on3001
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on3001
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on3001
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on3001
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on3001
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on3001
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on3001
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on3001
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on3001
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on3001
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on3001
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on3001
