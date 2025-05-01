@@ -1,0 +1,167 @@
+{
+  _id: ObjectId('680ee931485eb43977bfceec'),
+  name: 'BIT',
+  duration: 3
+}
+{
+  _id: ObjectId('680ee975485eb43977bfceed'),
+  mame: 'B.SC in IT',
+  duration: 3
+}
+{
+  _id: ObjectId('680ee9cb485eb43977bfceee'),
+  name: 'B.SC in Enviroment Science',
+  duration: 4
+}
+{
+  _id: ObjectId('680ee9fb485eb43977bfceef'),
+  name: 'B.SC in Applied Mathematics',
+  duration: 3
+}
+{
+  _id: ObjectId('680eea36485eb43977bfcef0'),
+  name: 'B.SC in Computer Science',
+  duration: 4
+}
+{
+  _id: ObjectId('680eea65485eb43977bfcef1'),
+  name: 'B.SC in IT',
+  duration: 4
+}
+01.)db.degrees.deleteOne({_id:ObjectId('680ee931485eb43977bfceec')})
+	{
+  acknowledged: true,
+  deletedCount: 1
+	}
+
+02.)db.degrees.find().projection([{'name':1},{'_id':-1}])
+	{
+  _id: ObjectId('680ee975485eb43977bfceed')
+	}
+	{
+  _id: ObjectId('680ee9cb485eb43977bfceee')
+	}
+	{
+  _id: ObjectId('680ee9fb485eb43977bfceef')
+	}
+	{
+  _id: ObjectId('680eea36485eb43977bfcef0')
+	}
+	{
+  _id: ObjectId('680eea65485eb43977bfcef1')
+	}
+	
+
+03.)db.degrees.find().projection(['name','duration'])
+	{
+  _id: ObjectId('680ee975485eb43977bfceed'),
+  duration: 3
+	}
+	{
+  _id: ObjectId('680ee9cb485eb43977bfceee'),
+  name: 'B.SC in Enviroment Science',
+  duration: 4
+	}
+	{
+  _id: ObjectId('680ee9fb485eb43977bfceef'),
+  name: 'B.SC in Applied Mathematics',
+  duration: 3
+	}
+	{
+  _id: ObjectId('680eea36485eb43977bfcef0'),
+  name: 'B.SC in Computer Science',
+  duration: 4
+	}
+	{
+  _id: ObjectId('680eea65485eb43977bfcef1'),
+  name: 'B.SC in IT',
+  duration: 4
+	}
+	
+
+04.)db.degrees.find({},{name:1,_id:0}).pretty()
+	{
+  name: 'B.SC in Enviroment Science'
+	}
+	{
+  name: 'B.SC in Applied Mathematics'
+	}
+	{
+  name: 'B.SC in Computer Science'
+	}
+	{
+  name: 'B.SC in IT'
+	}
+
+05.)db.degrees.deleteMany({duration:{$lt:4}})
+	{
+  acknowledged: true,
+  deletedCount: 2
+	}
+
+06.)db.degrees.updateOne({_id:ObjectId('680eea65485eb43977bfcef1')},{$set:{name:'BIT',duration:3}})	
+	{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+	}
+
+07.)db.degrees.findOne({_id:ObjectId('680eea65485eb43977bfcef1')})
+	{
+  _id: ObjectId('680eea65485eb43977bfcef1'),
+  name: 'BIT',
+  duration: 3
+	}
+	
+08.)db.degrees.updateMany({duration:{$gte:4}},{$inc:{duration:1}})
+	{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 2,
+  modifiedCount: 2,
+  upsertedCount: 0
+	}
+	
+09.)db.degrees.find()
+	{
+  _id: ObjectId('680ee9cb485eb43977bfceee'),
+  name: 'B.SC in Enviroment Science',
+  duration: 5
+	}
+	{
+  _id: ObjectId('680eea36485eb43977bfcef0'),
+  name: 'B.SC in Computer Science',
+  duration: 5
+	}
+	{
+  _id: ObjectId('680eea65485eb43977bfcef1'),
+  name: 'BIT',
+  duration: 3
+	}
+	
+10.)db.students.updateOne({regno:'2021IT017'},{$push:{skills:'PHP'}})
+	{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+11.)db.students.findOne({regno:'2021IT017'})
+	{
+  _id: ObjectId('6809be1874e229e28f6998e3'),
+  regno: '2021IT017',
+  name: 'Kolins',
+  age: 25,
+  degree: 'IT',
+  gpa: 3.2,
+  skills: [
+    'JS',
+    'MongoDB',
+    'Node',
+    'PHP'
+  ],
+  gender: 'female'
+	}
